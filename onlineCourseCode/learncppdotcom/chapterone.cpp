@@ -5,7 +5,7 @@ using namespace std;
 void lastChapter() {
     std::cout << "Enter an integer to double! -> ";
 
-    int num{};
+    int num {0};
     std::cin >> num;
 
     std::cout << "Double that number is " << num*2 << "!" << std::endl;
@@ -34,7 +34,7 @@ void chapter15() {
     std::cout << 4; //Display output of text or variables
     std::cout << "Try putting a string in\n"; // "\n" is a speical character
 
-    int inputTest{};
+    int inputTest {0};
     cin >> inputTest;
 
     std::cout << inputTest;
