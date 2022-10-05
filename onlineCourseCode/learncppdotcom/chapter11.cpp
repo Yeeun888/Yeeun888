@@ -2,6 +2,7 @@
 #include <string_view>
 #include <array>
 #include <vector>
+#include <algorithm>
 
 struct Rectangle {
     int length{};
@@ -436,7 +437,7 @@ void chapter1116() {
             { 14, 3, 10 }, 
             { 15, 3, 40 } 
         }
-    }
+    };
 }
 
 template<typename T, std::size_t size> //object type and size of array
@@ -448,7 +449,50 @@ void printArray(const std::array<T, size>& myArray) { //it is a reference
     std::cout << '\n';
 }
 
+void chapter1117() {
+    //std::vectors - cool way of making dynamically allocated arrays
+    //how to initialize and resize.
+    //Important note is that resizing is computationally expensive
+    //and that vectors clean up memory themselves after they are finished. 
+
+    std::vector array{ 1,2,3 };
+    array.resize(5); //adds two more spaces (initialized to zero
+    
+    std::vector<int>array1(5); //5 variables that are zero. 
+                               //Pay attention {} vs ()
+
+    for(int i{ 0 }; i < array1.size(); ++i) {
+        std::cout << array1[i];
+    }
+}
+
+void chapter1118() {
+    //The only note here is invalidated iterators. Which happens if an iterator
+    //is still stepping over an object. Think of iterators as stepping through
+    //stones
+
+    //Example code:
+    std::vector v{ 1,2,3,4,5 };
+
+    auto it{v.begin()};
+
+    std::cout << *it << '\n';
+    v.erase(it); //Erases the element at address.
+
+    ++it; //Surprisingly does not break down. 
+    std::cout << *it << '\n';
+}
+
+void chapter1119() {
+    //Builtin algorithms in cpp can be broken down into afew
+    //Inspectors: View but not change
+    //Mutators: Change data either shuffle or outright change
+    //Facilitators: Generate behavior based on data such as multiplying, etc.
+
+    
+}
+
 int main() {
-    chapter1116();
+    chapter1118();
     return 0;
 }
