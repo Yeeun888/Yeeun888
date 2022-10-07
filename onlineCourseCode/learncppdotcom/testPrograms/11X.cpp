@@ -68,7 +68,7 @@ void question4_main(const char* string) {
     }
 }
 
-//Below is question 5
+//Below is question 6
 enum class ranks {
     two, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace, max_amount,
 };
@@ -124,7 +124,7 @@ int getCardValue(card testedCard) {
     } else { return static_cast<int>(testedCard.rank) + 2; }
 }
 
-void question5_main() {
+void question6_main() {
     std::array x = createDeck();
 
     shuffleDeck(x);
@@ -140,8 +140,103 @@ void question5_main() {
     std::cout << z;
 }
 
+int takeCard() {
+    static int cardNum{ 0 };
+    ++cardNum;
+    return cardNum;
+}
+
+int compareDeck(int player, int dealer);
+
+bool playBlackjack(std::array<card, 52> deck) {
+    std::vector<card> dealerCards = { deck[takeCard()] };
+    std::vector<card> playerCards{ deck[takeCard()], deck[takeCard()] };
+
+    int playerFinalValue{};
+    int dealerFinalValue{};
+
+    std::cout << "The dealer has one card, you get two cards to start. Your cards are: \n";
+    printSuit(playerCards[0]); std::cout << " and "; printSuit(playerCards[1]); std::cout << '\n';
+    while(true) {
+        std::cout << "Hit (h) or stand (s), partner? ";
+        
+        char option{};
+        std::cin >> option;
+        if(option == 'h') {
+            playerCards.push_back(deck[takeCard()]);
+        } else if (option == 's') {
+            std::cout << "You choose to stand \n";
+            break;
+        } else {
+            std::cout << "Try another option \n";
+            continue;
+            }
+        std::cout << "Your cards of ";
+        for(card i : playerCards) { printSuit(i); std::cout << ' '; };
+
+        playerFinalValue = 0;
+        for(card i : playerCards) { playerFinalValue += getCardValue(i); };
+        
+        std::cout << "Have a value of " << playerFinalValue << '\n';
+
+        if(playerFinalValue > 21) {
+            std::cout << "You loose noob";
+            return false;
+        }
+    }
+
+    std::cout << "Now the dealer goes. \n";
+
+    while(true) {
+        for(card i : dealerCards) { printSuit(i); std::cout << ' '; };
+        std::cout << '\n';
+        //Calculate dealer deck value
+        dealerFinalValue = 0;
+        for(card i : dealerCards) { dealerFinalValue += getCardValue(i); };
+        
+        if(dealerFinalValue <= 17) {
+            dealerCards.push_back(deck[takeCard()]);
+            continue;
+        } 
+
+        if(dealerFinalValue > 21) {
+            std::cout << "The dealer has lost. GG. \n";
+            return false;
+        }
+        
+        break;     
+    }
+
+    compareDeck(playerFinalValue, dealerFinalValue);
+    return true;
+}
+
+int compareDeck(int player, int dealer) {
+    if (player == dealer)
+    {
+        std::cout << "Equal game, equal decks. Draw. ";
+        return 0;
+    }
+
+    if(player > dealer) {
+        std::cout << "You win.";
+        return 0;
+    }
+
+    std::cout << "You lose. ";
+    return 0;
+}
+
+int question7_main() {
+    std::array deck = createDeck();
+    shuffleDeck(deck);
+    bool winState = playBlackjack(deck);
+
+    return 0;    
+}
+
 int main() {
-    question5_main();
+    question7_main();
 
     return 0;
 }
