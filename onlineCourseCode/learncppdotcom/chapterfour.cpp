@@ -6,6 +6,7 @@
 
 #include <iomanip>
 #include <stdint.h> //For fixed size headers
+#include <cstdint>
 //#include <cstdint> is also usable instead of <stdint.h> to go through std namespace
 //Beginning Note: Chapter 3 was filled with strategies on debugging and thus has not notes
 
@@ -63,8 +64,8 @@ void chapter46() {
     int8_t i = 124; 
 
     //Fast (performance) and least (smallest) types of integers
-    int_fast16_t fast16 = 31000;
-    int_least16_t least16 = 31000;
+    int_fast16_t fast16 = 1000;
+    int_least16_t least16 = 1000;
 
     std::cout << sizeof(fast16) <<  " and " << sizeof(least16);
 }
@@ -269,8 +270,15 @@ void chapter418() {
 
 
 int main() {
-    chapter418();
-    
-    return 0;
+    std::cout << "least 8:  " << sizeof(std::int_least8_t) * 8 << " bits\n";
+	std::cout << "least 16: " << sizeof(std::int_least16_t) * 8 << " bits\n";
+	std::cout << "least 32: " << sizeof(std::int_least32_t) * 8 << " bits\n";
+	std::cout << '\n';
+	std::cout << "fast 8:  " << sizeof(std::int_fast8_t) * 8 << " bits\n";
+	std::cout << "fast 16: " << sizeof(std::int_fast16_t) * 8 << " bits\n";
+	std::cout << "fast 32: " << sizeof(std::int_fast32_t) * 8 << " bits\n";
+
+	return 0;
+
 }
 

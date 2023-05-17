@@ -322,7 +322,7 @@ class Simple {
 //Chapter 13.14 - Static member functions
 //These are useful for accessing static member variables withou having to create an object
 class testClass {
-    private:
+
         static inline int testVariable{ 0 };
         static const int var2{ 2 };
     public:
@@ -330,6 +330,27 @@ class testClass {
             return testVariable;
         }
 };
+
+//13.5 - Friend functions
+//They are basically function prototypes which can be forward declared inside a class
+//such that they have access to private members of the class. 
+
+//For instance
+class Accumulator {
+    private:
+        int m_value{ 0 };
+    public:
+        void add(int value) { m_value += value; }
+
+        friend void reset(Accumulator& accumulator);
+};
+
+void reset(Accumulator& accumulator) {
+    accumulator.m_value = 0; //As you can see the function can access member variables that are private
+} 
+
+//Timing the code
+//Use a timer object and then output elapsed time. 
 
 int main() {
     chapter138();
