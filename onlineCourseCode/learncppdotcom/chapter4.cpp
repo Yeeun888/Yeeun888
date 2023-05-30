@@ -126,7 +126,7 @@ void constVariable(const std::string inputText) {
     const int b{ 2 };
 
     //a, b, and inputText cannot be changed
-    constexpr addedVariable{ a + b }
+    constexpr int addedVariable{ a + b };
 
     //Anything const and constexpr will always be evaluated at COMPILE-TIME
     //hence why it is more optimized. a+b will always evaluate to 3. There is
