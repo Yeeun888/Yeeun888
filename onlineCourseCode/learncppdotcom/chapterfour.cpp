@@ -45,7 +45,7 @@ void chapter44() {
 }
 
 void chapter45() {
-    //Integers can be unsigned, meaning they can hold only poositive values
+    //Integers can be unsigned, meaning they can hold only positive values
     //Now instead of 2^(n-1) they can hold 2^n-1 values
 
     unsigned short us;

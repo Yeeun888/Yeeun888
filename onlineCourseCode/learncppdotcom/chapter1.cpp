@@ -63,15 +63,18 @@ void inputAndOutput() {
 //Variables and functions should describe what they do in the name.
 //Other than this, they should also be capitalized properly
 
-/*
-ex:
-numApples = 3;
-multiplyNumber(int num, int multiplier);
-etc.
-*/
+void namingPracticeExamples() {
+    //Best naming practices for variables and functions
 
-
-
+    //Always start value names with lower case
+    /**
+     * 2. Identifiers should not being with underscore 
+     * 3. Identifiers should be descriptive to what they do in actual real code
+     */
+    int value;
+    int this_is_snake_case; //Using underscores to separate the values
+    int thisIsCamelCase;    //Using upper case letters to distinguish the values
+}
 
 int main() {
     return 0;

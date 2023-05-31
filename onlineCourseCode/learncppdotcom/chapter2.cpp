@@ -1,6 +1,6 @@
 #include <iostream>
 
-//*Chapter 2 
+//*Chapter 2 - Function and Files 
 
 //*Functions are blocks of code that pause execution and have the cpu jump
 int exampleFunction1(std::string passedText) {
