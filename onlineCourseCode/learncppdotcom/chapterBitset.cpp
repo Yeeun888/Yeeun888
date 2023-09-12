@@ -34,7 +34,18 @@ void bitsetOperation() {
     //AND, OR, XOR
     //note: XOR returns false when both are 0. Likewise true when one of them is 1. 
     //The operations are done 
+
+    std::cout << (std::bitset<4>{ 0b0001} & std::bitset<4>{ 0b0011} & std::bitset<4>{ 0b0111});
+    /**
+     * 0001 AND
+     * 0011 AND
+     * 0111 AND 
+     * --------
+     * 0001 
+     */
 }
+
+
 
 int main() {
     bitsetOperation();

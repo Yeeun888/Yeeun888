@@ -1,0 +1,110 @@
+Welcome to Bookshelf Manager!
+Enter command: a emma jane_austen classics 5 474
+Book: 'emma' added!
+Enter command: a hp1 jkr fantasy 5 223
+Book: 'hp1' added!
+Enter command: a win_friends dale_carnegie non_fiction 4 288
+Book: 'win_friends' added!
+Enter command: a frankenstein mary_shelley sci_fi 3 260
+Book: 'frankenstein' added!
+Enter command: a hp2 jkr fantasy 4 341
+Book: 'hp2' added!
+Enter command: a hp4 jk fantasy 4 636
+Book: 'hp4' added!
+Enter command: p
+ ---------------------------------- 
+| emma                             |
+| jane_austen                      |
+| CLASSICS                         |
+| Rating: 5/5     Pages:    0/ 474 |
+ -----------------V---------------- 
+ ---------------------------------- 
+| hp1                              |
+| jkr                              |
+| FANTASY                          |
+| Rating: 5/5     Pages:    0/ 223 |
+ -----------------V---------------- 
+ ---------------------------------- 
+| win_friends                      |
+| dale_carnegie                    |
+| NON_FICTION                      |
+| Rating: 4/5     Pages:    0/ 288 |
+ -----------------V---------------- 
+ ---------------------------------- 
+| frankenstein                     |
+| mary_shelley                     |
+| SCI_FI                           |
+| Rating: 3/5     Pages:    0/ 260 |
+ -----------------V---------------- 
+ ---------------------------------- 
+| hp2                              |
+| jkr                              |
+| FANTASY                          |
+| Rating: 4/5     Pages:    0/ 341 |
+ -----------------V---------------- 
+ ---------------------------------- 
+| hp4                              |
+| jk                               |
+| FANTASY                          |
+| Rating: 4/5     Pages:    0/ 636 |
+ -----------------V---------------- 
+Enter command: P
+     ---------------------------------- 
+    | Shelf: 0                         |
+--->| tbr                              |
+    | Books: 6                         |
+     -----------------V---------------- 
+Enter command: G fantasy
+Enter command: P
+     ---------------------------------- 
+    | Shelf: 0                         |
+    | fantasy                          |
+    | Books: 3                         |
+     -----------------V---------------- 
+     ---------------------------------- 
+    | Shelf: 1                         |
+--->| tbr                              |
+    | Books: 3                         |
+     -----------------V---------------- 
+Enter command: p
+ ---------------------------------- 
+| emma                             |
+| jane_austen                      |
+| CLASSICS                         |
+| Rating: 5/5     Pages:    0/ 474 |
+ -----------------V---------------- 
+ ---------------------------------- 
+| win_friends                      |
+| dale_carnegie                    |
+| NON_FICTION                      |
+| Rating: 4/5     Pages:    0/ 288 |
+ -----------------V---------------- 
+ ---------------------------------- 
+| frankenstein                     |
+| mary_shelley                     |
+| SCI_FI                           |
+| Rating: 3/5     Pages:    0/ 260 |
+ -----------------V---------------- 
+Enter command: <
+Enter command: p
+ ---------------------------------- 
+| hp1                              |
+| jkr                              |
+| FANTASY                          |
+| Rating: 5/5     Pages:    0/ 223 |
+ -----------------V---------------- 
+ ---------------------------------- 
+| hp2                              |
+| jkr                              |
+| FANTASY                          |
+| Rating: 4/5     Pages:    0/ 341 |
+ -----------------V---------------- 
+ ---------------------------------- 
+| hp4                              |
+| jk                               |
+| FANTASY                          |
+| Rating: 4/5     Pages:    0/ 636 |
+ -----------------V---------------- 
+Enter command: [CTRL+D]
+Goodbye
+
