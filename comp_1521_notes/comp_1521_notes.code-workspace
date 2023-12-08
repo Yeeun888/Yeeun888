@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "SSH FS - cse_unsw",
+			"uri": "ssh://cse_unsw/import/reed/7/z5457349"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "259add3bc9ce7649",
+    "type": "split",
+    "children": [
+      {
+        "id": "24fa3a391330ed7c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b770d6e20f41bbb5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Week 5 Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4850bca85c65d921",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Week 7 Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e20264e7094cf716",
+    "type": "split",
+    "children": [
+      {
+        "id": "c894300ef9cfc496",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8be8a7a0023c7d41",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabeticalReverse"
+              }
+            }
+          },
+          {
+            "id": "09dc4c93eb186d07",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a8a80ce9d167010e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "8c774f3cbd2c5268",
+    "type": "split",
+    "children": [
+      {
+        "id": "d9184adaef82d40c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f408b77036593f7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Week 5 Notes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "efac6e315c8fe7ba",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Week 5 Notes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6284263c30a4724b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7857ff0514d37811",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Week 5 Notes.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b770d6e20f41bbb5",
+  "lastOpenFiles": [
+    "Pasted image 20231102182328.png",
+    "Pasted image 20231102182321.png",
+    "Week 7 Notes.md",
+    "Week 5 Notes.md",
+    "Pasted image 20231102180602.png",
+    "Images/Pasted image 20231102172521.png",
+    "Images/Pasted image 20231102172419.png",
+    "Week 4 Notes.md",
+    "Week 3 Notes.md",
+    "Week 2 Notes.md",
+    "Week 1 Notes.md",
+    "Images/Pasted image 20231020193151.png",
+    "Images/Pasted image 20231019234706.png",
+    "Images/Pasted image 20231019224110.png",
+    "Images/Pasted image 20231019223756.png",
+    "Images/Pasted image 20230928231022.png",
+    "Progress Notes.md",
+    "Untitled.md",
+    "Questions to Ask Tutor.md",
+    "Images/Pasted image 20230922230340.png",
+    "Images",
+    "test.md"
+  ]
+}
